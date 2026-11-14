@@ -1,0 +1,23 @@
+{
+  "name": "vac-vergez-asociados",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Propuesta web corporativa editorial para VAC — Vergez & Asociados (Construcción y Diseño).",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/prepare-assets.mjs && vite",
+    "build": "node scripts/prepare-assets.mjs && tsc --noEmit && vite build && node scripts/prerender-routes.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "assets": "node scripts/prepare-assets.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.49.1",
+    "sharp": "^0.33.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
